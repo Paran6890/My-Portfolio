@@ -1,0 +1,266 @@
+@media(min-width: 320px) and (max-width: 575px){
+
+
+/* navbar css start */
+
+
+nav ul{
+    text-align: center;
+    background: #444444;;
+}
+
+nav ul li{
+    margin-left: 0;
+}
+
+nav ul .button{
+    margin-top: 20px;
+}
+
+/* navbar css end */
+
+/* banner css start */
+
+.overlay h1{
+    font-size: 40px;
+    margin-left: 10px;
+}
+
+.overlay p{
+    font-size: 16;
+
+}
+
+.overlay h2{
+font-size: 25px;
+}
+
+/* banner-part-css-end */
+
+/* about-part-css-start */
+.tittle h3{
+    font-size: 30px;
+}
+
+.tittle h3::after{
+    width: 0;
+}
+.tittle h3::before{
+    width: 0;
+}
+
+
+/* about-part-css-end */
+
+/* project-part-css-start */
+
+.project-filtter ul li{
+    margin-top: 15px;
+}
+/* project-part-css-end */
+
+
+/* count-part-css-start */
+
+.counter {
+    margin-top: 15px;
+}
+/* count-part-css-end */
+
+/* footer-part-css-start */
+
+
+.single-cta i{
+    margin-top: 15px;
+}
+.cta-text h4 {
+    margin-top: 15px;
+}
+/* footer-part-css-end */
+
+}
+
+
+
+@media(min-width: 576px) and (max-width: 767px){
+    /* navbar css start */
+    nav ul{
+        text-align: center;
+        background: #444444;;
+    }
+    
+    nav ul li{
+        margin-left: 0;
+    }
+    
+    nav ul .button{
+        margin-top: 20px;
+    }
+
+/* navbar css end */
+
+
+
+
+
+/* banner css start */
+    .overlay h2{
+        font-size: 32px;
+        }
+
+
+/* banner css end */
+
+
+/* about-part-css-start */
+
+
+.tittle h3::after{
+    width: 0;
+}
+.tittle h3::before{
+    width: 0;
+}
+
+
+/* about-part-css-end */
+
+
+/* service-part-css-start */
+
+.box h4{
+    font-size: 18px;
+}
+/* service-part-css-end */
+
+
+/* count-part-css-start */
+
+.counter {
+    margin-top: 15px;
+}
+
+/* count-part-css-end */
+
+/* footer-part-css-start */
+
+
+.single-cta i{
+    margin-top: 15px;
+}
+.cta-text h4 {
+    margin-top: 15px;
+}
+/* footer-part-css-end */
+
+
+
+
+}
+
+
+@media(min-width: 768px) and (max-width: 991px){
+
+
+ /* navbar css start */
+ nav ul{
+    text-align: center;
+    background: #444444;;
+}
+
+nav ul li{
+    margin-left: 0;
+}
+
+nav ul .button{
+    margin-top: 20px;
+}
+
+/* navbar css end */
+
+
+
+/* banner css start */
+.overlay h2{
+    font-size: 45px;
+    }
+
+
+/* banner css end */
+
+
+/* service-part-css-start */
+
+.box h4{
+    font-size: 15px;
+}
+/* service-part-css-end */
+
+
+
+
+/* count-part-css-start */
+
+.counter {
+    margin-top: 15px;
+}
+
+
+.count-text{
+    font-size: 17px;
+}
+/* count-part-css-end */
+
+
+}
+
+
+
+
+@media(min-width: 992px) and (max-width: 1199px){
+
+/* navbar css start */
+    nav ul li{
+        margin-left: 20px;
+    }
+
+    /* navbar css end */
+
+
+
+
+
+/* service-part-css-start */
+
+.box h4{
+    font-size: 24px;
+}
+/* service-part-css-end */
+
+
+
+
+/* count-part-css-start */
+
+.counter {
+    margin-top: 24px;
+}
+
+
+.count-text{
+    font-size: 17px;
+}
+/* count-part-css-end */
+
+
+
+
+
+
+}
+
+
+
+
+
+

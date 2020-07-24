@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>New Portfolio</title>
+    <link rel="stylesheet" href="fontawesome-free-5.14.0-web/css/all.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/barfiller.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
-<body>
+<body data-spy="scroll" data-target=".menu">
 
 
     <!-- header_start -->
@@ -19,7 +22,7 @@
 <header>
     <nav class="navbar navbar-expand-lg menu">
         <div class="container">
-        <a class="navbar-brand t-logo " href="https://www.facebook.com/paran68/">
+        <a class="navbar-brand t-logo "href="https://www.facebook.com/paran68/">
             SHAH <span>paran</span>          
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -29,25 +32,25 @@
 
         <div class="collapse navbar-collapse ttt" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto manu">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            <li class="nav-item ">
+              <a class="nav-link active" href="#banner-part">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">about</a>
+              <a class="nav-link" href="#about-part">about</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Portfolio</a>
+              <a class="nav-link" href="#project-part">projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">team</a>
+              <a class="nav-link" href="#my_service_part">service</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">blog</a>
-            </li>
+              <a class="nav-link" href="#team-part">team</a>
+            </li>          
             <li class="nav-item">
-              <a class="nav-link" href="#">contact</a>
+              <a class="nav-link" href="#foter-part">contact</a>
             </li>           
-              <a class="nav-link button" href="#">
+              <a class="nav-link button" href="#banner-part">
                Downlode
               </a>         
           </ul>
@@ -63,7 +66,7 @@
     <div class="container">
       <div class="text">
         <h1>
-          SHAH PARAN
+          SHAH <span>PARAN</span>
         </h1>
         <p>
           I'm a Full stack web developer with a passion for learning.
@@ -72,7 +75,7 @@
         <h2>
           I am a <span class="poran"></span>
         </h2>
-        <a href="#">Hire Me</a>
+        <a href="#foter-part">Hire Me</a>
       </div>
     </div>
   </div>
@@ -123,14 +126,14 @@
   <div class="container">
     <div class="row">
       <div class="col-md-6">
-        <h5>HTMl & CSS</h5>
+        <h5 class="clr1">HTMl & CSS</h5>
         <div id="bar1" class="barfiller">
           <div class="tipWrap">
           <span class="tip"></span>
             </div>
             <span class="fill" data-percentage="90"></span>
         </div>
-        <h5>jquery</h5>
+        <h5 class="clr2">jquery</h5>
         <div id="bar2" class="barfiller">
           <div class="tipWrap">
           <span class="tip"></span>
@@ -138,7 +141,7 @@
             <span class="fill" data-percentage="70"></span>
         </div>
 
-        <h5>Bootstrap</h5>
+        <h5 class="clr3">Bootstrap</h5>
         <div id="bar3" class="barfiller">
           <div class="tipWrap">
           <span class="tip"></span>
@@ -147,14 +150,14 @@
         </div>
       </div>
       <div class="col-md-6">
-        <h5>PHP</h5>
+        <h5 class="clr4">PHP</h5>
         <div id="bar4" class="barfiller">
           <div class="tipWrap">
           <span class="tip"></span>
             </div>
             <span class="fill" data-percentage="85"></span>
         </div>
-        <h5>wrodpress</h5>
+        <h5 class="clr5">wrodpress</h5>
         <div id="bar5" class="barfiller">
           <div class="tipWrap">
           <span class="tip"></span>
@@ -162,7 +165,7 @@
             <span class="fill" data-percentage="95"></span>
         </div>
 
-        <h5>laravel</h5>
+        <h5 class="clr6">laravel</h5>
         <div id="bar6" class="barfiller">
           <div class="tipWrap">
           <span class="tip"></span>
@@ -176,13 +179,433 @@
 <!-- progress bar end -->
 
 
+<!-- project part start -->
+
+<section id="project-part" >
+  <div class="overlaye">
+  <div class="tittle">
+    <h3>Recent Project</h3>
+  </div>
+  <div class="container">   
+    <div class="ro">
+      <div class="project-filtter">
+        <ul>
+          <li data-filter="*" class="active">ALL</li>
+          <li data-filter=".html">HTML</li>
+          <li data-filter=".wordpress">WRODPRESS</li>
+          <li data-filter=".php">PHP</li>
+        </ul>
+      </div>
+
+
+      <div class="grid">
+         
+        <div class="col-md-4 col-sm-6 element-item html php">
+          <div class="img"> 
+            <a href="https://paran6890.github.io/Personal_Porfolio/.">
+              <img src="images/Screenshot (122).png" alt="Profile"> 
+              <div class="overlay">
+                <h5>Visit Now</h5>
+              </div>
+            </a>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6 element-item html">
+          <div class="img">
+         <a href=" https://paran6890.github.io/Gym/">
+          <img src="images/Screenshot (55).png" alt="Profile">
+          <div class="overlay">
+            <h5>Visit Now</h5>
+          </div>
+         </a>
+        </div>
+        </div>
+        <div class="col-md-4 col-sm-6 element-item html wordpress ">
+          <div class="img">
+            <a href="https://paran6890.github.io/Eventrox/">
+            <img src="images/Screenshot (91).png" alt="Profile">
+            <div class="overlay">
+              <h5>Visit Now</h5>
+            </div>
+          </a>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 element-item html wordpress ">
+          <div class="img">
+            <a href="https://paran6890.github.io/Educataion/.">
+            <img src="images/Screenshot (79).png" alt="Profile">
+            <div class="overlay">
+              <h5>Visit Now</h5>
+            </div>
+          </a>
+          </div>
+        </div>
+      
+        <div class="col-md-4 col-sm-6 element-item html php">
+          <div class="img"> 
+            <a href="https://paran6890.github.io/Gyan/.">
+              <img src="images/Screenshot (130).png" alt="Profile"> 
+              <div class="overlay">
+                <h5>Visit Now</h5>
+              </div>
+            </a>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6 element-item  php">
+          <div class="img"> 
+            <a href="https://paran6890.github.io/vlaintina/.">
+              <img src="images/Screenshot (129).png" alt="Profile"> 
+              <div class="overlay">
+                <h5>Visit Now</h5>
+              </div>
+            </a>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6 element-item  wordpress">
+          <div class="img"> 
+            <a href="https://paran6890.github.io/Appon/.">
+              <img src="images/Screenshot (128).png" alt="Profile"> 
+              <div class="overlay">
+                <h5>Visit Now</h5>
+              </div>
+            </a>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6 element-item  wordpress">
+          <div class="img"> 
+            <a href="https://paran6890.github.io/Bizzency/.">
+              <img src="images/Screenshot (127).png" alt="Profile"> 
+              <div class="overlay">
+                <h5>Visit Now</h5>
+              </div>
+            </a>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6 element-item html wordpress">
+          <div class="img"> 
+            <a href="https://paran6890.github.io/Betals/.">
+              <img src="images/Screenshot (135).png" alt="Profile"> 
+              <div class="overlay">
+                <h5>Visit Now</h5>
+              </div>
+            </a>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+
+<!-- project part end -->
+
+<!-- my_service_part start -->
+
+<section id="my_service_part">
+  <div class="overlaye">
+    <div class="tittle">
+      <h3>my service</h3>
+    </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 col-sm-6">
+        <div class="box">
+        <i class="fa fa-code" aria-hidden="true"></i>
+          <h4>Web Development</h4>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6"><div class="box">
+        <i class="fas fa-bezier-curve"></i>
+          <h4>Web Design</h4>
+        </div></div>
+        <div class="col-md-4 col-sm-6"><div class="box">
+          <i class="fas fa-tools"></i>
+            <h4>UI UX Design</h4>
+          </div></div>
+      <div class="col-md-4 col-sm-6"><div class="box">
+        <i class="fab fa-bootstrap"></i>
+          <h4>Bootstrap</h4>
+        </div></div>
+      <div class="col-md-4 col-sm-6"><div class="box">
+        <i class="fab fa-wordpress"></i>
+          <h4>Wordpress</h4>
+        </div></div>
+      <div class="col-md-4 col-sm-6"><div class="box">
+        <i class="fab fa-php"></i>
+          <h4>Php Development</h4>
+        </div></div>
+    </div>
+  </div>
+</div>
+</section>
 
 
 
+<!-- my_service_part end -->
 
 
+<!-- count part start -->
+<section id="count-part">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 col-sm-6">
+        <div class="counter col_fourth">
+          <i class="fas fa-hourglass-start  xx"></i>
+          <h2 class="timer count-title count-number" data-to="3" data-speed="1500"></h2>
+           <p class="count-text ">Experience</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="counter col_fourth">
+          <i class="fas fa-project-diagram xx"></i>
+          <h2 class="timer count-title count-number" data-to="95" data-speed="1500"></h2>
+           <p class="count-text ">Complete Project</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="counter col_fourth">
+          <i class="fas fa-smile xx"></i>
+          <h2 class="timer count-title count-number" data-to="30" data-speed="1500"></h2>
+           <p class="count-text ">Happy Client</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="counter col_fourth">
+          <i class="fas fa-award xx"></i>
+          <h2 class="timer count-title count-number" data-to="20" data-speed="1500"></h2>
+           <p class="count-text ">Award Winner</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- count part end -->
 
 
+  <!-- ==========================
+          team part start
+  =============================== -->
+  <section id="team-part">
+    <div class="team">
+      <div class="tittle">
+        <h3>my team</h3>
+      </div>
+      <div class="container">
+        <div class="row teams">
+          <div class="col-md-3 col-sm-6">
+            <div class="members">
+              <div class="img">
+                <img src="images/paran.jpg" alt="teamimg">
+                <div class="overlayee">
+                  <div class="icons">
+                    <a href="https://www.facebook.com/paran68/"> <i class="fa fa-facebook io" aria-hidden="true"></i> </a>
+                    <a href="https://www.twitter.com/paran68/"></a> <i class="fa fa-twitter io" aria-hidden="true"></i> </a>
+                    <a href="https://www.linkedin.com/mdparan68/"> <i class="fa fa-linkedin io" aria-hidden="true"></i> </a>
+                  </div>
+                </div>
+              </div>
+              <div class="text">
+                <h2>shah paran</h2>
+                <h3>Full stack web developer</h3>
+                <p>I am a Web developer.I have 3years experience in php and wordpress Development.Also be a cretive web and UI UX designer.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="members">
+              <div class="img">
+                <img src="images/imam.png" alt="teamimg">
+                <div class="overlayee">
+                  <div class="icons">
+                    <a href="#"> <i class="fa fa-facebook io" aria-hidden="true"></i> </a>
+                    <a href="#"></a> <i class="fa fa-twitter io" aria-hidden="true"></i> </a>
+                    <a href="#"> <i class="fa fa-linkedin io" aria-hidden="true"></i> </a>
+                  </div>
+                </div>
+              </div>
+              <div class="text">
+                <h2>Imam</h2>
+                <h3>Fontend developer</h3>
+                <p>I am a Fontend Developer.I have a 4years experience in this sector.Also be a UI UX designer</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="members">
+              <div class="img">
+                <img src="images/rasel.jpg" alt="teamimg">
+                <div class="overlayee">
+                  <div class="icons">
+                    <a href="#"> <i class="fa fa-facebook io" aria-hidden="true"></i> </a>
+                    <a href="#"></a> <i class="fa fa-twitter io" aria-hidden="true"></i> </a>
+                    <a href="#"> <i class="fa fa-linkedin io" aria-hidden="true"></i> </a>
+                  </div>
+                </div>
+              </div>
+              <div class="text">
+                <h2>Rasel Rohan</h2>
+                <h3> Fontend developer</h3>
+                <p>I am a Fontend Developer.I have a 4years experience in this sector.Also be a UI UX designer.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="members">
+              <div class="img">
+                <img src="images/faysal.jpg" alt="teamimg">
+                <div class="overlayee">
+                  <div class="icons">
+                    <a href="#"> <i class="fa fa-facebook io" aria-hidden="true"></i> </a>
+                    <a href="#"></a> <i class="fa fa-twitter io" aria-hidden="true"></i> </a>
+                    <a href="#"> <i class="fa fa-linkedin io" aria-hidden="true"></i> </a>
+                  </div>
+                </div>
+              </div>
+              <div class="text">
+                <h2>Faysal</h2>
+                <h3>Full stack web developer</h3>
+                <p>I am a Web developer.I have 3years experience in php and wordpress Development.Also be a cretive designer.</p>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================
+          team part end
+  =============================== -->
+
+
+<!-- footer-part-start -->
+
+<footer class="footer-section" id="foter-part">
+  <div class="container">
+    <div class="footer-cta pt-5 pb-5">
+      <div class="row">
+        <div class="col-xl-4 col-md-4 mb-30">
+          <div class="single-cta">
+            <i class="fas fa-map-marker-alt"></i>
+            <div class="cta-text">
+              <h4>Find us</h4>
+              <span>Dhaka Cantonment 1206</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-md-4 mb-30">
+          <div class="single-cta">
+            <i class="fas fa-phone"></i>
+            <div class="cta-text">
+              <h4>Call us</h4>
+              <span>01721287202</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-md-4 mb-30">
+          <div class="single-cta">
+            <i class="far fa-envelope-open"></i>
+            <div class="cta-text">
+              <h4>Mail us</h4>
+              <span>mdshahparan259@</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-content pt-5 pb-5">
+      <div class="row">
+        <div class="col-xl-4 col-lg-4 mb-50">
+          <div class="footer-widget">
+            <div class="footer-logo">
+              <a class="navbar-brand t-logo "href="https://www.facebook.com/paran68/">
+                SHAH <span>paran</span>          
+            </a>
+            </div>
+            <div class="footer-text">
+              <p>I am a Professional Web Developer.</p>
+            </div>
+            <div class="footer-social-icon">
+              <span>Follow us</span>
+              <a href="https://www.facebook.com/paran68/"><i class="fa fa-facebook facebook-bg"></i></a>
+              <a href="https://www.twitter.com/paran68/"><i class="fab fa-twitter twitter-bg"></i></a>
+              <a href="https://www.github.com/Paran6890/"><i class="fab fa-google-plus-g google-bg"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+          <div class="footer-widget">
+            <div class="footer-widget-heading">
+              <h3>Useful Links</h3>
+            </div>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">about</a></li>
+              <li><a href="#">Skills</a></li>
+              <li><a href="#">Experience</a></li>
+              <li><a href="#">Team</a></li>
+              <li><a href="#">contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+          <div class="footer-widget">
+            <div class="footer-widget-heading">
+              <h3>Drop Mail For Hire</h3>
+            </div>
+            <div class="footer-text mb-25">
+              <p>Send your Mail for Hire me.</p>
+            </div>
+            <div class="subscribe-form">
+              <form action="#">
+                <input type="text" placeholder="Email Address">
+                <button><i class="fab fa-telegram-plane"></i></button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="copyright-area">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+          <div class="copyright-text">
+            <p>Copyright &copy; 2018, All Right Reserved <a href="https://facebook.com/paran68/"
+                target="_blank">Paran</a></p>
+          </div>
+        </div>
+        <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+          <div class="footer-menu">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Projects</a></li>
+              <li><a href="#">Service</a></li>
+              <li><a href="#">Team</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- footer-part-end -->
+
+
+<!-- ===========================
+  goto top button part start
+================================ -->
+<a class="btop" href="#"> <i class="fa fa-angle-up" aria-hidden="true"></i></a>
+
+
+<!-- ===========================
+  goto top button part end
+================================ -->
 
 
     <script src="js/jquery-1.12.4.min.js"></script>
@@ -191,6 +614,7 @@
     <script src="js/popper.min.js"></script>
     <script src="js/typed.js"></script>
     <script src="js/jquery.ripples-min.js"></script>
+    <script src="js/isotope-docs.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

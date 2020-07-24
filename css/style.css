@@ -15,10 +15,10 @@ h1,h2,h3,h4,h5,h6{
     margin: 0;
 }
 
-
-body{
-    background: #b4dbc0;
+html,body{
+    scroll-behavior: smooth;
 }
+
 
 /* header_css_start */
 
@@ -33,7 +33,9 @@ header{
     z-index: 999999;
 }
 
-
+nav{
+    width: 100%;
+}
 nav .t-logo{
     font-family: 'Ubuntu', sans-serif;
     font-size: 30px;
@@ -106,6 +108,42 @@ nav ul .button:hover{
 
 }
 
+.fixed {
+    position: fixed !important;
+    top: 0;
+    left: 0 !important;
+    background: rgba(63, 55, 59, 0.5);
+    animation: paran .4s;
+
+}
+
+@keyframes paran {
+    from {
+        top: -80px;
+    }
+
+    to {
+        top: 0;
+    }
+}
+
+nav ul li .active {}
+
+nav ul li .active::before {
+    transform: scale(1);
+    opacity: 1;
+}
+nav button{
+    outline: 0 !important;
+}
+
+nav button i{
+    color: #68d388;
+    transition: .4s;
+}
+nav button i:hover{
+    color: #ff4646;
+}
 
 /* header_css_end */
 
@@ -191,6 +229,7 @@ nav ul .button:hover{
 .about{
     background: url(../images/banner-873097_1280.jpg) no-repeat center;
     background-size: cover;
+    
 
 }
 
@@ -207,10 +246,34 @@ nav ul .button:hover{
 .tittle h3{
     font-family: 'Ubuntu', serif;
     font-weight: 700;
-    font-size: 50px;
+    font-size: 40px;
     color: #ff4646;
     text-transform: uppercase;
+    position: relative;
 }
+
+.tittle h3::after{
+    position: absolute;
+    left: 61%;
+    bottom: -4px;
+    height: 2px;
+    width: 2%;
+    background: #68d388;
+    content: "";
+}
+.tittle h3::before{
+    position: absolute;
+    left: 55%;
+    bottom: -4px;
+    height: 2px;
+    width: 5%;
+    background: #68d388;
+    content: "";
+}
+
+
+
+
 
 .about .overlay .img img{
 }
@@ -250,10 +313,11 @@ font-weight: 700;
 }
 
 /* about-part css end */
+
 /* progress bar css start */
 
 #progress-bar{
-    padding: 50px 0;
+    padding: 50px 0 0;
    
 }
 
@@ -264,22 +328,635 @@ h5{
     font-size: 20px;
     color: #ff4646;
     text-transform: capitalize;
+    
 }
+
+
+.clr1{
+    color: #ff4646;
+}
+
+.clr2{
+    color: #df1c77;
+}
+
+.clr3{
+    color: #27be91;
+}
+
+.clr4{
+    color: #8b0035;
+}
+.clr5{
+    color: #4690ff;
+}
+.clr6{
+    color: #e946ff;
+}
+
+
+
 
 #bar1 .fill{
     background: #ff4646 !important;
 }
-#bar3 .fill{
-    background: #ff8a46 !important;
+#bar2 .fill{
+    background: #df1c77 !important;
 }
+
+#bar3 .fill{
+    background: #27be91 !important;
+}
+#bar4 .fill{
+    background: #8b0035 !important;
+}
+
+
 #bar5 .fill{
     background: #4690ff !important;
 }
+
 #bar6 .fill{
-    background: #afff46 !important;
+    background: #e946ff !important;
 }
 
 /* progress bar css end */
+
+
+/* project part css start */
+
+#project-part{
+    margin-top: 100px;
+   background: url(../images/red-lights-in-line-on-black-surface-158826.jpg) no-repeat center;
+   background-size: cover;    
+}
+.overlaye{
+    padding-top: 50px;
+    background: rgba(0, 0, 0, .6);
+    width: 100%;
+    height: 100%;
+}
+.project-filtter{
+    text-align: center;
+    padding:0 0 30px ; 
+}
+
+.project-filtter ul li{
+    font-family: 'Ubuntu', serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #00ac34;
+    padding: 5px 10px;
+    border: 1px solid #ff4646;
+    display: inline-block;
+    margin-left: 30px;
+    cursor: pointer;
+    box-shadow: 0 0 40px rgb(139, 138, 138);
+    transition: .4s;
+}
+
+.project-filtter ul li:hover{
+    box-shadow: 0 0 0 rgb(139, 138, 138);
+    border: 1px solid #68d388;
+    color: #ff4646;
+
+}
+
+
+.project-filtter ul .active{
+    background: #dddddd;
+    color: #00ac34;
+}
+#project-part .grid .img{
+    margin-bottom: 20px;
+    position: relative;
+}
+
+#project-part .grid .img .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(255, 70, 70, .7);
+    width: 100%;
+    height: 100%;
+    transform: scale(0);
+    transition: .4s;
+    text-align: center;
+}
+
+#project-part .grid .img .overlay h5{
+color: #fff;
+font-size: 30px;
+font-weight: 700;
+margin-top: 60px;
+text-transform: uppercase;
+}
+
+#project-part .grid .img:hover .overlay{
+
+transform: scale(1);
+}
+
+
+#project-part .grid .img img{
+    width: 100%;
+}
+/* canvas{
+    height: 0 !important;
+} */
+
+/* project part css end */
+
+
+/* my_service_part css start */
+
+#my_service_part{
+    background: url(../images/macbook-pro-on-brown-wooden-table-2312369.jpg) no-repeat center;
+    background-size: cover;
+}
+.overlaye{
+    padding-bottom: 50px;
+}
+
+
+.box{
+    margin-top: 30px;
+    text-align: center;
+    border-top:  5px solid#68d388;
+    border-bottom:  5px solid#68d388;
+    border-left:  5px solid#ff4646;
+    border-right:  5px solid#ff4646;
+    background: rgba(0, 0, 0, .6);
+    padding: 35px;
+    cursor: pointer;
+    box-shadow: 0 0 40px rgb(139, 138, 138);
+    transition: .4s;
+}
+
+.box:hover{
+    box-shadow: 0 0 0 rgb(139, 138, 138);
+    border-top:  5px solid#ff4646;
+    border-bottom:  5px solid#ff4646;
+    border-left:  5px solid#68d388;
+    border-right:  5px solid#68d388;
+
+}
+
+.box i{
+    font-size: 40px;
+    color: #ff4646;
+    font-weight: bold;
+    padding: 10px;
+    background: #68d388;
+    border-radius: 5px;
+    transform: rotate(0deg);
+    transition: .4s;
+}
+
+.box:hover i{
+    transform: rotate(360deg);
+    box-shadow: 0 0 40px rgb(139, 138, 138);
+}
+.box:hover h4{
+    box-shadow: 0 0 40px rgb(139, 138, 138);
+}
+
+
+.box h4{
+    margin-top: 15px;
+    font-family: 'Ubuntu', serif;
+    font-weight: 500;
+    font-size: 30px;
+    color: #00ac34;
+    transition: .4s;
+}
+
+
+/* my_service_part css end */
+
+/* count-part-css-start */
+
+
+#count-part{
+    padding: 50px;
+}
+
+.counter { 
+    background-color: #ff4646;
+     padding: 20px 0; 
+     border-radius: 5px;
+    }
+.count-title {
+     font-size: 40px; 
+     color: #68d388;
+     font-weight: bold; 
+     margin-top: 10px;
+     margin-bottom: 0;
+      text-align: center; 
+    }
+.count-text { 
+    font-family: 'Ubuntu', serif;
+    font-size: 25px;
+    color: #68d388;
+     font-weight: bold; 
+      margin-top: 10px; 
+      margin-bottom: 0; 
+      text-align: center; 
+    }
+
+.xx{ 
+    margin: 0 auto;
+     float: none;
+      display: table; 
+      font-size: 30px;
+      color: #68d388; 
+    }
+/* count-part-css-end */
+
+/* ==========================
+    team part css start
+=============================== */
+#team-part {
+    padding-top: 50px;
+    background: url(../images/man-wearing-black-and-blue-mask-costume-1473215.jpg) no-repeat center;
+    background-size: cover;
+}
+
+#team-part .team .members .img {
+    margin-top: 70px;
+    position: relative;
+    transition: .4s;
+}
+
+#team-part .team .members .img img {
+    width: 100%;
+
+}
+
+#team-part .team .members .img .overlayee {
+    width: 100%;
+    height: 100%;
+    background: rgba(226, 62, 56, .5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 5px solid #68d368;
+    transform: scale(0);
+    transition: .4s;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    transition: .4s;
+}
+
+#team-part .team .members .img .overlayee .icons {
+    width: 30px;
+    margin-left: auto;
+    margin-right: 10px;
+
+
+}
+
+#team-part .team .members .img .overlayee .icons .io {
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    color: #fff;
+    border: 2px solid #68d368;
+    margin-top: 10px;
+    transition: .4s;
+}
+
+#team-part .team .members .img .overlayee .icons .io:hover {
+    background: #fff;
+    color: #1da0f2;
+}
+
+#team-part .team .members .text {
+    text-align: center;
+    border: 1px solid transparent;
+    border-top: 0;
+    padding-top: 20px;
+    transition: .4s;
+}
+
+#team-part .team .members .text h2 {
+    font-family: 'Ubuntu', serif;
+    font-size: 18px;
+    color: #ff4646;
+    text-transform: uppercase;
+}
+
+#team-part .team .members .text h3 {
+    font-family: 'Ubuntu', serif;
+    font-size: 18px;
+    color: #00ac34;
+    text-transform: capitalize;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#team-part .team .members .text p {
+    font-family: 'Ubuntu', serif;
+    font-size: 16px;
+    color: #68d388;
+    width: 190px;
+    margin: auto;
+    visibility: hidden;
+    opacity: 0;
+    transition: .4s;
+    padding-bottom: 15px;
+}
+
+#team-part .team .members:hover .img .overlayee {
+    transform: scale(.93);
+}
+
+#team-part .team .members:hover .text {
+    border: 1px solid #68d388;
+}
+
+#team-part .team .members:hover .text p {
+    visibility: visible;
+    opacity: 1;
+}
+
+#team-part .team .members:hover .img {
+    margin-top: 30px;
+}
+
+/* ==========================
+    team part css end
+=============================== */
+
+
+ /* footer-part css end */
+
+#foter-part {
+    padding-top: 50px;
+     background: url(../images/lighted-matchstick-on-brown-wooden-surface-750225.jpg) no-repeat center;
+     background-size: cover;
+ }
+ 
+ ul {
+     margin: 0px;
+     padding: 0px;
+ }
+ 
+ .footer-section {
+     background: #151414;
+     position: relative;
+ }
+ 
+ .footer-cta {
+     border-bottom: 1px solid #373636;
+ }
+ 
+ .single-cta i {
+     color: #68d388;
+     font-size: 30px;
+     float: left;
+     margin-top: 8px;
+ }
+ 
+ .cta-text {
+     padding-left: 15px;
+     display: inline-block;
+ }
+ 
+ .cta-text h4 {
+     color: #ff4646;
+     font-size: 20px;
+     font-weight: 600;
+     margin-bottom: 2px;
+ }
+ 
+ .cta-text span {
+     color: #68d388;
+     font-size: 15px;
+ }
+ 
+ .footer-content {
+     position: relative;
+     z-index: 2;
+ }
+ 
+ .footer-pattern img {
+     position: absolute;
+     top: 0;
+     left: 0;
+     height: 330px;
+     background-size: cover;
+     background-position: 100% 100%;
+ }
+ 
+ .footer-logo a {
+     margin-bottom: 10px;
+     font-family: 'Ubuntu', sans-serif;
+     font-size: 30px;
+     font-weight: 700;
+     color: #68d388;
+     text-transform: uppercase;
+ }
+ 
+
+.footer-logo a span{
+    color: #ff4646; 
+}
+
+
+ 
+ .footer-text p {
+     margin-bottom: 14px;
+     font-size: 14px;
+     color: #68d388;
+     line-height: 28px;
+ }
+ 
+ .footer-social-icon span {
+     color: #68d388;
+     display: block;
+     font-size: 20px;
+     font-weight: 700;
+     font-family: 'Ubuntu', sans-serif;
+     margin-bottom: 20px;
+ }
+ 
+ .footer-social-icon a {
+     color: #fff;
+     font-size: 16px;
+     margin-right: 15px;
+ }
+ 
+ .footer-social-icon i {
+     height: 40px;
+     width: 40px;
+     text-align: center;
+     line-height: 38px;
+     border-radius: 50%;
+     transform: rotate(0);
+     transition: .4s;
+ }
+ 
+ .footer-social-icon i:hover {
+     transform: rotate(360deg);
+ }
+ 
+ 
+ .facebook-bg {
+     background: #3B5998;
+ }
+ 
+ .twitter-bg {
+     background: #55ACEE;
+ }
+ 
+ .google-bg {
+     background: #68d388;
+ }
+ 
+ .footer-widget-heading h3 {
+     color: #ff4646;
+     font-size: 20px;
+     font-weight: 600;
+     margin-bottom: 40px;
+     position: relative;
+ }
+ 
+ .footer-widget-heading h3::before {
+     content: "";
+     position: absolute;
+     left: 0;
+     bottom: -15px;
+     height: 2px;
+     width: 50px;
+     background: #68d388;
+ }
+ 
+ .footer-widget ul li {
+     display: inline-block;
+     float: left;
+     width: 50%;
+     margin-bottom: 12px;
+ }
+ 
+ .footer-widget ul li a:hover {
+     color: #ff4646;
+ }
+ 
+ .footer-widget ul li a {
+     color: #68d388;
+     text-transform: capitalize;
+ }
+ 
+ .subscribe-form {
+     position: relative;
+     overflow: hidden;
+ }
+ 
+ .subscribe-form input {
+     width: 100%;
+     padding: 14px 28px;
+     background: #2E2E2E;
+     border: 1px solid #ff4646;
+     color: #fff;
+ }
+ 
+ .subscribe-form button {
+     position: absolute;
+     right: 0;
+     background: #68d388;
+     padding: 13px 20px;
+     border: 1px solid #68d388;
+     top: 0;
+ }
+ 
+ .subscribe-form button i {
+     color: #fff;
+     font-size: 22px;
+     transform: rotate(-6deg);
+ }
+ 
+ .copyright-area {
+     background: #202020;
+     padding: 25px 0;
+ }
+ 
+ .copyright-text p {
+     margin: 0;
+     font-size: 14px;
+     color: #00ac34;
+ }
+ 
+ .copyright-text p a {
+     color: #ff4646;
+ }
+ 
+ .footer-menu li {
+     display: inline-block;
+     margin-left: 20px;
+ }
+ 
+ .footer-menu li:hover a {
+     color: #68d388;
+ }
+ 
+ .footer-menu li a {
+     font-size: 14px;
+     color: #ff4646;
+ }
+ 
+ 
+ /* footer-part css end */
+ 
+
+
+/* ================================
+              goto top button  start
+============================== */
+.btop {
+    display: none;
+    position: fixed;
+    background: #66d388;
+    padding: 5px 10px;
+    bottom: 50px;
+    right: 30px;
+    color: #dddddd;
+    font-size: 22px;
+    border-radius: 5px;
+    animation: seju 3s infinite linear;
+    transition: .4s;
+}
+
+.btop:hover {
+    background: #ff4646;
+    color: #fff;
+}
+
+@keyframes seju{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-30px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
